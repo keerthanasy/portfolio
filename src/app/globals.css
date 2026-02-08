@@ -107,7 +107,7 @@ a:hover {
 .container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 1.5rem;
   width: 100%;
 }
 
@@ -137,9 +137,21 @@ a:hover {
   left: 0;
 }
 
-.z-0 {
-  z-index: 0;
+
+@media (max-width: 768px) {
+  .section {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
+
 
 .z-10 {
   z-index: 10;
@@ -202,6 +214,10 @@ a:hover {
   justify-content: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -210,8 +226,24 @@ a:hover {
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-x-3 {
+  column-gap: 0.75rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .gap-8 {
@@ -678,6 +710,37 @@ a:hover {
   background: var(--gradient-2);
   color: white;
   box-shadow: 0 0 20px rgba(46, 49, 146, 0.4);
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(8px);
+  cursor: default;
+}
+
+@media (min-width: 768px) {
+  .tech-pill {
+    padding: 0.6rem 1.25rem;
+    font-size: 0.875rem;
+  }
+}
+
+.tech-pill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0, 191, 255, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 191, 255, 0.1);
 }
 
 /* Scrollbar */

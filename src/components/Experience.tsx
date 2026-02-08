@@ -38,25 +38,28 @@ export default function Experience() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="p-8 bg-[var(--card-bg)] rounded-2xl border border-[var(--border)] hover:border-[var(--accent)] transition-colors duration-500"
+                    className="p-8 md:p-12 bg-[var(--card-bg)] rounded-3xl border border-[var(--border)] hover:border-[var(--accent)] transition-colors duration-500"
                 >
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
                         <div>
                             <h3 className="text-2xl font-bold text-[var(--text-main)]">System Engineer</h3>
-                            <a href="https://www.jobinandjismi.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] text-lg hover:underline">
+                            <a href="https://www.jobinandjismi.com/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] text-lg hover:underline block mt-1">
                                 Jobin and Jismi IT Services
                             </a>
                         </div>
-                        <span className="text-[var(--text-muted)] mt-2 md:mt-0 font-mono">Sep 2023 — Present</span>
+                        <span className="text-[var(--text-muted)] mt-2 md:mt-0 font-mono text-sm">Sep 2023 — Present</span>
                     </div>
 
-                    <p className="text-[var(--text-muted)] leading-relaxed mb-4">
+                    <p className="text-[var(--text-muted)] leading-relaxed mb-8 text-lg">
                         Working on complex system architectures and delivering high-performance solutions for enterprise clients. Focusing on modern web technologies, optimization, and scalable codebases.
                     </p>
 
-                    <div className="flex flex-wrap gap-2 mt-6">
+                    <div className="flex flex-wrap gap-x-3 gap-y-4 mt-8">
                         {['React', 'Next.js', 'System Architecture', 'Performance Optimization'].map((tech) => (
-                            <span key={tech} className="px-3 py-1 bg-[var(--background)] rounded-full text-xs text-[var(--text-muted)] border border-[var(--border)]">
+                            <span
+                                key={tech}
+                                className="tech-pill"
+                            >
                                 {tech}
                             </span>
                         ))}
