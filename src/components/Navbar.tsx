@@ -20,7 +20,7 @@ export default function Navbar() {
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled || isOpen ? 'py-4 bg-black/80 backdrop-blur-md border-b border-white/5' : 'py-6 bg-transparent'
       }`}>
       <div className="container flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tighter z-50 relative" onClick={() => setIsOpen(false)}>
+        <Link href="/" className="text-xl font-bold tracking-tighter relative z-[60]" onClick={() => setIsOpen(false)}>
           DEV<span style={{ color: 'var(--accent)' }}>.</span>
         </Link>
 
@@ -35,7 +35,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden z-50 relative text-[var(--text-main)] p-2 hover:bg-white/10 rounded-full transition-colors"
+          className="md:hidden relative z-[60] text-[var(--text-main)] p-2 -mr-2 hover:bg-white/10 rounded-full transition-colors flex items-center justify-center"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -50,7 +50,7 @@ export default function Navbar() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: '100%' }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed inset-0 bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-xl font-medium md:hidden"
+              className="fixed inset-0 bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 text-xl font-medium md:hidden z-50"
               style={{ paddingTop: '80px' }}
             >
               <Link href="#about" onClick={() => setIsOpen(false)} className="hover:text-[var(--accent)] transition-colors text-2xl">About</Link>

@@ -50,6 +50,14 @@ const projects = [
         stack: ['WebGL', 'GLSL', 'Physics'],
         gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
         link: 'https://nexusliquid.netlify.app/'
+    },
+    {
+        title: 'Fluid Simulation',
+        category: 'Interactive WebGL',
+        description: 'Real-time interactive fluid dynamics simulation running in the browser.',
+        stack: ['WebGL', 'GLSL', 'Physics'],
+        gradient: 'linear-gradient(135deg, #00c6fb 0%, #005bea 100%)',
+        link: 'https://fluid-simulation-sk.netlify.app/'
     }
 ];
 
