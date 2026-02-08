@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Mail, Github, Linkedin, FileText } from 'lucide-react';
+import { Mail, Github, Linkedin, FileText, Phone } from 'lucide-react';
 
 export default function Contact() {
     return (
@@ -16,9 +16,14 @@ export default function Contact() {
                     Interested in working together? let's schedule a time to discuss.
                 </p>
 
-                <a href="mailto:skeerthana1912@gmail.com" className="btn px-8 py-4 text-base font-semibold mb-16 inline-flex items-center gap-2">
-                    <Mail size={18} /> Say Hello
-                </a>
+                <div className="flex flex-col md:flex-row gap-12 justify-center items-center mb-16">
+                    <a href="mailto:skeerthana1912@gmail.com" className="btn px-8 py-4 text-base font-semibold inline-flex items-center gap-2">
+                        <Mail size={18} /> Say Hello
+                    </a>
+                    <a href="tel:+917695805315" className="btn px-8 py-4 text-base font-semibold inline-flex items-center gap-2">
+                        <Phone size={18} /> +91 7695805315
+                    </a>
+                </div>
 
                 <div className="flex gap-8 justify-center items-center">
                     <a href="https://github.com/keerthanasy" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors text-xs uppercase tracking-widest font-medium group">
@@ -33,7 +38,7 @@ export default function Contact() {
                         </span>
                         LinkedIn
                     </a>
-                    <a href="#" className="flex flex-col items-center gap-2 text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors text-xs uppercase tracking-widest font-medium group">
+                    <a href="/Keerthana_Sachithanandham_Web_dev.pdf" download className="flex flex-col items-center gap-2 text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors text-xs uppercase tracking-widest font-medium group">
                         <span className="p-3 rounded-full bg-[var(--surface)] border border-[var(--border)] group-hover:border-[var(--accent)] transition-colors">
                             <FileText size={20} />
                         </span>

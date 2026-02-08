@@ -28,7 +28,7 @@ export default function Experience() {
                 className="max-w-4xl mx-auto text-center mb-24 px-6 relative z-10"
             >
                 <h2 className="text-4xl md:text-5xl font-bold mb-8">More than just code.</h2>
-                <p className="text-xl md:text-2xl text-[var(--text-muted)] leading-relaxed">
+                <p className="text-xl md:text-2xl text-[var(--text-muted)] leading-relaxed max-w-2xl mx-auto">
                     I bring a product mindset to engineering, focusing on user value and technical excellence.
                 </p>
             </motion.div>
